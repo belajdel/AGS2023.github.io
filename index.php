@@ -24,49 +24,7 @@
 <body>
 
     <main>
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    Arabian Youtubers || Gamers
-                </a>
-
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Artists</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="TGS2023.html">T.G.S 2023</a>
-                        </li>
-                    </ul>
-
-                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none" id="reg_button">Buy Ticket</a>
-                    <a href="registration.html" class="btn custom-btn d-lg-block d-none">Registration</a>
-                </div>
-            </div>
-        </nav>
-
-
+        <?php include 'header.php'; ?>
         <section class="hero-section" id="section_1">
             <div class="section-overlay"></div>
 
@@ -142,8 +100,7 @@
                     <div class="col-lg-5 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
-                                <img src="images/ldr.jpg"
-                                    class="artists-image img-fluid">
+                                <img src="images/artists/ldr.jpg" class="artists-image img-fluid">
                             </div>
 
                             <div class="artists-hover">
@@ -162,8 +119,7 @@
                     <div class="col-lg-5 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
-                                <img src="images/knk.jpg" width="20px"
-                                    class="artists-image img-fluid">
+                                <img src="images/artists/knk.jpg" width="20px" class="artists-image img-fluid">
                             </div>
 
                             <div class="artists-hover">
@@ -186,12 +142,13 @@
 
                                 <p class="mb-0">
                                     <strong>Youtube Channel:</strong>
-                                    <a href="https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ">@kendricklamar5461</a>
+                                    <a
+                                        href="https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ">@kendricklamar5461</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                   
+
         </section>
 
 
@@ -209,7 +166,7 @@
                                             <th scope="col">Monday</th>
                                             <th scope="col">Tuesday</th>
                                             <th scope="col">Wednesday</th>
-                                            </tr>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -249,130 +206,7 @@
     </main>
 
 
-    <footer class="site-footer">
-        <div class="site-footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">Arabian Youtubers & Gamers</h2>
-                    </div>
-
-                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
-                        <ul class="social-icon d-flex justify-content-lg-end">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-twitter"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-apple"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-instagram"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-youtube"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-pinterest"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <h5 class="site-footer-title mb-3">Have a question?</h5>
-
-                    <p class="text-white d-flex mb-1">
-                        <a href="tel: 090-080-0760" class="site-footer-link">
-                            090-080-0760
-                        </a>
-                    </p>
-
-                    <p class="text-white d-flex">
-                        <a href="mailto:hello@company.com" class="site-footer-link">
-                            hello@company.com
-                        </a>
-                    </p>
-                </div>                
-                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
-                    <h5 class="site-footer-title mb-3">Location</h5>
-
-                    <p class="text-white d-flex mt-3 mb-2">
-                        International Fair Of Sousse, Sousse,Tunisia</p>
-                        
-
-                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
-                        <span>Our Maps</span>
-                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="16" cy="16" r="15.5"></circle>
-                                <line x1="10" y1="18" x2="16" y2="12"></line>
-                                <line x1="16" y1="12" x2="22" y2="18"></line>
-
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <br><br><br>
-                <div>
-                    <h5 class="site-footer-title mb-3">Sponsors</h5>
-                    <div class="spnsr-cont">
-                        <a href="https://appgallery.huawei.com/" target="_blank"><img src="images/sponsors/app1.png"></a>
-                        <a href="https://www.tunisieautoroutes.tn/" target="_blank"><img src="images/sponsors/auto.png"></a>
-                        <a href="https://www.mosaiquefm.net/" target="_blank" ><img src="images/sponsors/m.png"></a>
-                        <a href="https://www.tunisietelecom.tn/" target="_blank"> <img src="images/sponsors/tt.png"></a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-          
-        <div class="site-footer-bottom">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © 2023 Arabian Youtubers & Gamers Company</p>
-
-                    </div>
-
-                    <div class="col-lg-8 col-12 mt-lg-5">
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Privacy Policy</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Your Feedback</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>

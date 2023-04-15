@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Festava Live - Ticket HTML Form</title>
+
+    <title>AGS-Africa Game Show</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,117 +17,97 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pip.css">
+
+    <!--
+
+TemplateMo 583 Festava Live
+
+https://templatemo.com/tm-583-festava-live
+
+-->
+
 </head>
 
 <body>
-
     <main>
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    Festava Live
-                </a>
-
-                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_2">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_3">Artists</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_5">Pricing</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_6">Contact</a>
-                        </li>
-                    </ul>
-
-                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
-                </div>
-            </div>
-        </nav>
-
+        <?php include 'header.php'; ?>
 
         <section class="ticket-section section-padding">
             <div class="section-overlay"></div>
 
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-6 col-10 mx-auto">
-                        <form class="custom-form ticket-form mb-5 mb-lg-0" action="insert.php"      method="post" role="form">
+                        <form class="custom-form ticket-form mb-5 mb-lg-0" action="email.php" method="POST" role="form">
                             <h2 class="text-center mb-4">Get started here</h2>
 
                             <div class="ticket-form-body">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="ticket-form-name" id="ticket-form-name"
-                                            class="form-control" placeholder="Full name" required>
+                                        <input type="text" name="name" class="form-control" placeholder="Full name"
+                                            required>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="email" name="ticket-form-email" id="ticket-form-email"
-                                            pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address"
-                                            required>
+                                        <input type="email" name="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                            placeholder="Email address" required>
                                     </div>
                                 </div>
 
-                                <input type="tel" class="form-control" name="ticket-form-phone" placeholder="Ph 21 234 567" pattern="[0-9]{2}[0-9]{3}[0-9]{3}|[0-9]{4}[0-9]{4}" required="">
+                                <input type="tel" class="form-control" name="tel" placeholder="+216 xxx xxx xx">
 
-
-                                <h6>Choose Ticket Type</h6>
-
+                                <h6>Event</h6>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-check form-control">
-                                            <input class="form-check-input" type="radio" name="TicketForm"
-                                                id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                Samara  25 TND
+                                            <input class="form-check-input" type="radio" name="event" value="valo">
+                                            <label class="form-check-label">
+                                                Valorant Tournament
                                             </label>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-check form-check-radio form-control">
-                                            <input class="form-check-input" type="radio" name="TicketForm"
-                                                id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Redstar 25 TND
+                                            <input class="form-check-input" type="radio" name="event" value="fifa">
+                                            <label class="form-check-label">
+                                                FIFA Tournament
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-control">
+                                            <input class="form-check-input" type="radio" name="event" value="ffire">
+                                            <label class="form-check-label">
+                                                Free Fire Tournament
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-check-radio form-control">
+                                            <input class="form-check-input" type="radio" name="event" value="hack">
+                                            <label class="form-check-label">
+                                                Hackathon
                                             </label>
                                         </div>
                                     </div>
                                 </div>
 
-                                <input type="number" name="ticket-form-number" id="ticket-form-number"
-                                    class="form-control" placeholder="Number of Tickets" required>
+                                <h6>Team Information</h6>
+                                <input type="text" name="team_name" class="form-control" placeholder="Team Name"
+                                    required>
 
-                                <textarea name="ticket-form-message" rows="3" class="form-control"
-                                    id="ticket-form-message" placeholder="Additional Request"></textarea>
+                                <!-- <h6>Optional</h6>
+                                <textarea name="message" rows="3" class="form-control"
+                                 placeholder="Additional Request"></textarea> -->
 
                                 <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                    <button type="submit" class="form-control">Buy Ticket</button>
+                                    <button href=index.php class="form-control">Register
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -141,7 +123,7 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">Festava Live</h2>
+                        <h2 class="text-white mb-lg-0">Live</h2>
                     </div>
 
                     <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
@@ -249,46 +231,21 @@
                 </div>
             </div>
         </div>
-
-        <div class="site-footer-bottom">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © 2036 Festava Live Company</p>
-                        <p class="copyright-text">Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p>
-                    </div>
-
-                    <div class="col-lg-8 col-12 mt-lg-5">
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Privacy Policy</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Your Feedback</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="spnsr-cont">
+            <a href="https://appgallery.huawei.com/" target="_blank"><img src="aimages/sponsors/pp1.png"></a>
+            <a href="https://www.tunisieautoroutes.tn/" target="_blank"><img src="images/sponsors/auto.png"></a>
+            <a href="https://www.mosaiquefm.net/" target="_blank"><img src="images/sponsors/m.png"></a>
+            <a href="https://www.tunisietelecom.tn/" target="_blank"> <img src="images/sponsors/tt.png"></a>
         </div>
-    </footer>
+        <?php //include 'footer.php'; ?>
 
-    <!--
 
-T e m p l a t e M o
 
--->
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/custom.js"></script>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
 
 </body>
 
