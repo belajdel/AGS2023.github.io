@@ -672,7 +672,7 @@ strong {
 .schedule-table tr,
 .schedule-table td {
   border-bottom-color: #363a3e;
-  padding: 30px;
+  padding: 25px;
 }
 
 .schedule-table tr:last-child th,
