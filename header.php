@@ -25,6 +25,10 @@
                 <li class="nav-item">
                     <a class="nav-link click-scroll" href="#section_4">Schedule</a>
                 </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="TGS2023.php">TGS 2023</a>
+                </li>
             </ul>
 
             <a href="ticket.php" class="btn custom-btn d-lg-block d-none" id="reg_button">Buy Ticket</a>
