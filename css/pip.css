@@ -1,0 +1,27 @@
+#reg_button{
+    margin-right: .5cm;
+}
+
+.spnsr-cont {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  border-radius: 1200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.spnsr-cont img {
+  margin: 5px;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.spnsr-cont img:hover {
+  transform: scale(1.1);
+
+
+
+}
