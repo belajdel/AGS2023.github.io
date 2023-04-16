@@ -224,6 +224,27 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-lg-5 col-12">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                                <img src="images/influencers/psyco_m.jpg" class="artists-image img-fluid">
+                            </div>
+
+                            <div class="artists-hover">
+                                <p>
+                                    <strong>Name:</strong>
+                                    Psysco M
+                                </p>
+                                <hr>
+                                <p class="mb-0">
+                                    <strong>Youtube Channel:</strong>
+                                    <a href="https://www.youtube.com/channel/UCIfxflt5h_k_AaaQhDEKRYA">@DracowarXXX</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
