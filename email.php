@@ -52,15 +52,15 @@
         //Server settings
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smt_server';
         $mail->SMTPAuth = true;
-        $mail->Username = 'mohamedzakariaouertani@gmail.com';
-        $mail->Password = 'aynarvnauwsruzme';
+        $mail->Username = 'your_mail';
+        $mail->Password = 'your_password';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
         //Recipients
-        $mail->setFrom('mohamedzakariaouertani@gmail.com', 'Mailer');
+        $mail->setFrom('your_mail', 'Mailer');
         $mail->addAddress($email, $name);
         $mail->isHTML(true); //Set email format to HTML
         $mail->Subject = 'AGS Registration finished successfully';
